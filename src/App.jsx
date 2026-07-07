@@ -2,10 +2,10 @@ import { useState } from "react";
 import { ShoppingBag, Plus, Minus, Trash2, Package } from "lucide-react";
 import "./App.css";
 
-// ---------------------------------------------------------------------------
+// 
 // Catalog data. In a real app this would come from an API — here it's a
 // fixed list, since only the cart needs to be reactive state.
-// ---------------------------------------------------------------------------
+// 
 const SHOES = [
   {
     id: "sk-014",
@@ -21,7 +21,7 @@ const SHOES = [
     colorway: "Bark / Moss",
     price: 145,
     sku: "SK-027-BM",
-    img: "https://images.unsplash.com/photo-1520256862855-398228c41684?w=600&q=80",
+    img: "pic-2.webp",
   },
   {
     id: "sk-003",
@@ -45,7 +45,7 @@ const SHOES = [
     colorway: "Sand Canvas",
     price: 85,
     sku: "SK-052-SC",
-    img: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&q=80",
+    img: "pic-4.webp",
   },
   {
     id: "sk-063",
@@ -53,7 +53,7 @@ const SHOES = [
     colorway: "Rust / Charcoal",
     price: 160,
     sku: "SK-063-RC",
-    img: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80",
+    img: "pic-3.webp",
   },
   {
     id: "sk-018",
@@ -69,7 +69,8 @@ const SHOES = [
     colorway: "Volt / White",
     price: 118,
     sku: "SK-071-VW",
-    img: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&q=80",
+    img: "pic-1.webp ",
+
   },
 ];
 
@@ -155,7 +156,7 @@ export default function App() {
           ))}
         </section>
 
-        {/* ---------------- Cart / packing slip ---------------- */}
+         {/* /* Cart / packing slip */  }
         <aside className="cart-panel" aria-label="Shopping cart">
           <div className="cart-header">
             <span className="cart-title">
